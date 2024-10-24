@@ -1,312 +1,173 @@
 <!DOCTYPE html>
-<!-- saved from url=(0054)https://www.cmu.edu/ethics-ai/events/neurips-2023.html -->
-<html lang="en" class=" frsooulib idc0_350"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>EEREID Tutorial - TU Dortmund University</title>    
-    <meta content="TU Dortmund University" name="author">
-
-<meta content="EEREID Tutorial - TU Dortmund" property="og:title">    
-    <meta content="website" property="og:type">
-    
-    <link href="https://www.tu-dortmund.de/favicon.ico" rel="icon">
-    <meta content="#9f0000" name="msapplication-TileColor">
-    
-<script>
-  var siteId = document.getElementById('siteId').getAttribute('data-siteId');
-  var siteName = siteId.replace(/\-\d{1,2}$/, '');
-  dataLayer.push({
-    'siteId': siteId,
-    'siteName': siteName,
-    'cms': 'cascade'
-  });
-</script>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Q36JQ');</script>
-
-    
-    
-    
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EE-REID: A Tutorial on Easy and Efficient Re-identification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #555;
+        }
+        .schedule, .speakers {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .schedule th, .schedule td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .schedule th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-<body class="vsc-initialized" data-new-gr-c-s-check-loaded="14.1202.0" data-gr-ext-installed="">
-<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5Q36JQ" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<body>
 
+<header>
+    <h1>EE-REID: A Tutorial on Easy and Efficient Re-identification</h1>
+    <p><strong>Proposed by:</strong> Lamarr Institute for Machine Learning and Artificial Intelligence, Germany</p>
+    <p><strong>Contact:</strong> simon.kluettermann@tu-dortmund.de</p>
+    <p><strong>Date:</strong> WACV 2025, Half-day Event</p>
+</header>
 
-    
-    <div id="content" tabindex="0">
-        
-    	    
-    
-            
-<!--
-                                                                                                                                <div aria-label="A robot hand reaches for a human hand" class="hero" data-img="../images/ai-hands-2000x1000-min.jpg" role="img" style="background-image:url(../images/ai-hands-2000x1000-min.jpg)"><img src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/ai-hands-2000x1000-min.jpg" aria-hidden="true" alt="print">                                            </div>
---!>
-                                    
-
-
-    	        
-         
-        <script type="text/javascript">
-                    function addLoadEvent(func) {
-                        var oldonload = window.onload;
-                        if (typeof window.onload != 'function') {
-                            window.onload = func;
-                        } else {
-                            window.onload = function() {
-                            if (oldonload) {
-                                oldonload();
-                            }
-                            func();
-                            }
-                          }
-                        }
-                        </script>
-      
-    
-                                                <div class="content">
-                        <div>                             <h1 style="text-align: center;">#TITLE#</h1>
-				<h2 style="text-align: center;">#SUBTITLE#</h2>
-<!--
-				<p style="text-align: center;"><strong>NeurIPS 2023 Tutorial</strong><br>Monday, Dec. 11, 2023<br>9:45 a.m.—12:15 p.m. CST<br>New Orleans Ernest N. Morial Convention Center (Hall F)</p>
-				--!>
-<h4><strong>Synopsis</strong></h4>
-<p>#ABSTRACT#</p>
-<h4>Schedule</h4>
-<ul>
-<li><strong>Introduction</strong> (5 min)<br>
-<ul>
-<li>Key definitions (accountability; governance)</li>
-<li>Challenges unique to AI (compliance; enforcement)</li>
-</ul>
-</li>
-<li><strong>Overview of existing policy guidance and frameworks</strong> (20 min)
-<ul>
-<li>Commonly addressed principles and issues</li>
-<li>Major policy-making efforts and proposals</li>
-</ul>
-</li>
-<li><strong>Overview of existing governance tools, practices and mechanisms</strong> (25 min)
-<ul>
-<li>Guidelines and best practices</li>
-<li>Enforcement mechanisms</li>
-</ul>
-</li>
-<li><strong style="font-size: 1em;">Case study: Searching for less discriminatory algorithmic systems</strong><span> (40 min)</span></li>
-<li><strong>Conclusion</strong> (10 min)
-<ul>
-<li>Calls to action for the ML community</li>
-<li>Introduction to panelists</li>
-</ul>
-</li>
-<li><strong>Panel discussion</strong> (40 min)</li>
-<li><strong>Q&amp;A</strong> (10 min)</li>
-</ul>
-                                                    </div><div class="sidebar">                                                         <div class=" teal invert">
-                            <h1>Organizers</h1>
-                        <ul>
-<li><a href="https://www.psorus.github.io" rel="noopener" target="_blank">Hoda Hei</a>, K&amp;L Gates Career Development Assistant Professor in Ethics and Computational Technologies, Carnegie Mellon University</li>
-<li><a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/london.html" rel="noopener" target="_blank">Alex John London</a>, K&amp;L Gates Professor of Ethics and Computational Technologies, Carnegie Mellon University</li>
-<li><a href="https://cs.barnard.edu/profiles/emily-black" rel="noopener" target="_blank">Emily Black</a>, assistant professor of computer science, Barnard College, Columbia University</li>
-</ul>
-and<br>
-<ul>
-<li><a href="https://www.rayidghani.com/" rel="noopener" target="_blank">Rayid Ghani</a>, distinguished career professor, Machine Learning Department and Heinz College of Information Systems and Public Policy, Carnegie Mellon University</li>
-<li><a href="https://law.stanford.edu/directory/daniel-e-ho/" rel="noopener" target="_blank">Daniel E. Ho</a>, William Benjamin Scott and Luna M. Scott Professor of Law, professor of political science, Stanford University</li>
-<li><a href="https://rakshit-naidu.github.io/" rel="noopener" target="_blank">Rakshit Naidu</a>, doctoral student, Georgia Institute of Technology</li>
-<li><a href="https://law.stanford.edu/directory/kit-rodolfa/">Kit T. Rodolfa</a>, research director, Regulation, Evaluation and Governance Lab (RegLab), Stanford University</li>
-</ul>
-            </div>
-                        <h1> Organizers </h1>
-              
-                                                        <div>
-                                                                        <p><a href="https://psorus.github.io" rel="noopener" target="_blank"><img alt="Simon Klüttermann" class="circle floatleft" height="150" src="./simon.jpeg" width="150">Simon Klüttermann</a> is the K&amp;L Gates Career Development Assistant Professor in Ethics and Computational Technologies at CMU, with joint appointments in the Machine Learning and Software and Societal Systems departments. She is also affiliated with the Human-Computer Interaction Institute and the Heinz College of Information Systems and Public Policy. Her research addresses issues of fairness and accountability through the use of ML in socially consequential domains.</p>
-                                                                                                                    </div><div>
-                                                                <p><a href="mailto:eblack@barnard.edu" rel="noopener" target="_blank"><img alt="Emily Black" class="circle floatleft" height="150" src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/black-400x400-min.jpg" width="150">Emily Black</a> is an assistant professor of computer science at Barnard College, Columbia University. She previously was a postdoctoral scholar at Stanford University’s RegLab, where she worked on the fairness impacts of AI systems in tax audit selection. She recently presented a cross-disciplinary tutorial at FAccT, centered around the challenges and opportunities for operationalizing participatory design approaches to include stakeholders and affected communities in ML ideation and creation pipelines.</p>
-                                                                                                                    </div><div>
-                                                                <p><a href="mailto:deho@law.stanford.edu" rel="noopener" target="_blank"><img alt="Dan Ho" class="circle floatleft" height="150" src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/ho-400x400-min.jpg" width="150">Dan Ho</a> is the William Benjamin Scott and Luna M. Scott Professor of Law and a professor of political science at Stanford University. He serves as an appointed member to the National Artificial Intelligence Advisory Commission (NAIAC), advising the White House National AI Initiative Office, and as Senior Advisor on Responsible AI to the U.S. Department of Labor.</p>
-                                </div>
-            </div>
-          
-                    
-                                                                                                    
-            <div class="grid column3   boxes  js-list">
-    
-              
-                                                        <div>
-                                                                        <p><a href="mailto:ajlondon@andrew.cmu.edu" rel="noopener" target="_blank"><img alt="Alex John London" class="circle floatleft" height="149" src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/alex-900x900-min.jpg" width="150">Alex John London</a>, Moderator, is the K&amp;L Gates Professor of Ethics and Computational Technologies, director of the Center for Ethics and Policy at CMU’s Department of Philosophy, and chief ethicist at CMU’s Block Center for Technology and Society. London’s work focuses on ethical and policy issues surrounding the development and deployment of novel technologies in medicine, biotechnology and AI, and on methodological issues in theoretical and practical ethics.</p>
-                                                                                                                    </div><div>
-                                                                <p><a href="mailto:afc78@cornell.edu%20" rel="noopener" target="_blank"><img alt="A. Feder Cooper" class="circle floatleft" height="150" src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/cooper-400x400-min.jpg" width="150">A. Feder Cooper</a> is a scalable ML researcher working on reliable measurement and evaluation of ML systems. Cooper's contributions span distributed training, hyperparameter optimization, uncertainty estimation, model selection, and generative modeling, as well as related research in tech policy and law. Cooper is currently an affiliate at the Berkman Klein Center at Harvard.</p>
-                                                                                                                    </div><div>
-                                                                <p><a href="mailto:kim@wustl.edu" rel="noopener" target="_blank"><img alt="Pauline Kim" class="circle floatleft" height="150" src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/kim-400x400-min.jpg" width="150">Pauline Kim</a> is the Daniel Noyes Kirby Professor of Law at Washington University in St. Louis. Her research is on the use of big data and AI in the workplace and the implications of these technologies for employee privacy and anti-discrimination law. She has written widely on issues such as job security, employee privacy, employment discrimination and judicial decision-making.</p>
-                                                                                                                    </div><div>
-                                                                <p><a href="mailto:logan@upturn.org" rel="noopener" target="_blank"><img alt="Logan Koepke" class="circle floatleft" height="150" src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/koepke-400x400-min.jpg" width="150">Logan Koepke</a> is a project director at Upturn, a nonprofit in Washington DC that advances equity and justice in the design, governance, and use of technology. His research and advocacy sits at the intersection of technology and civil rights. He helps lead Upturn's federal policy advocacy on the use of algorithmic systems in key civil rights contexts.</p>
-                                                                                                                    </div><div>
-                                                                <p><a href="mailto:deborah@mozillafoundation.org" rel="noopener" target="_blank"><img alt="Inioluwa Deborah Raji" class="circle floatleft" height="150" src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/raji-400x400-min.jpeg" width="150">Inioluwa Deborah Raji</a> is a Nigerian-Canadian computer scientist and activist who works on algorithmic bias, AI accountability and algorithmic auditing. She is currently a fellow at the Mozilla Foundation.</p>
-                                                                                                                    </div><div>
-                                                                <p><a href="mailto:reva.schwartz@nist.gov" rel="noopener" target="_blank"><img alt="Reva Schwartz" class="circle floatleft" height="150" src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/schwartz-400x400-min.jpg" width="150">Reva Schwartz</a> is a research scientist in the Information Technology Laboratory at the National Institute of Standards and Technology (NIST). She serves as principal investigator on Bias in Artificial Intelligence for NIST’s Trustworthy and Responsible AI program. She has advised federal agencies about how experts interact with automation to make sense of information in high-stakes settings.</p>
-                                </div>
-            </div>
-          
-                    
-                    
-        
-        
-        
-                                              <div class="grid column2 darkgrey invert nav" id="footer-grid">
-                                               <div>
-                                            <p>Supported by the <a href="https://www.cmu.edu/news/stories/archives/2016/november/gift.html" rel="noopener" target="_blank">K&amp;L Gates Endowment for Ethics and Computational Technologies</a> at Carnegie Mellon University</p>
-                                    </div>
-                                                <div>
-                                            <p class="btn ghost wide"><strong><a class="btn ghost wide" href="mailto:coleg@andrew.cmu.edu">CONTACT</a></strong></p>
-                                    </div>
-                        </div> 
-        
-        <footer class="grid column3 invert">
-            
-<div>
-<p>
-            K&amp;L Gates Initiative in Ethics &amp; Computational Technologies<br>
-            Carnegie Mellon University<br>     5000 Forbes Avenue<br>
-    Pittsburgh, PA 15213<br>
-</p>
-<ul>
-    <li><a href="https://www.cmu.edu/legal/" target="_blank">Legal Info</a></li>
-    <li><a href="https://www.cmu.edu/">www.cmu.edu</a></li>
-</ul>
-<ul><li>© <span id="js-current-year">2024</span> Carnegie Mellon University</li>
-</ul>  
-</div>
-            
-<div>
-    
-
-
-
-</div>
-            
-
-
-<div>
-   
+<div class="section">
+    <h2>Abstract</h2>
+    <p>We propose a tutorial for the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025, presenting our Python library <strong>EE-REID</strong>. 
+    The library enables novice researchers to easily perform re-identification experiments. 
+    The tutorial will be structured as a half-day event, featuring hands-on tasks using Google Colab notebooks. 
+    Attendees will work on three training tasks of increasing complexity, assisted by the presenters.</p>
 </div>
 
+<div class="section">
+    <h2>Course Description</h2>
+    <p>Re-identification is a growing field in machine learning. Our library, EE-REID, simplifies the setup of re-identification pipelines, making it accessible even to non-experts. 
+    The tutorial will introduce the library, guide participants through training tasks, and cover various re-identification challenges, including Graph Neural Networks and Novelty Detection.</p>
+</div>
 
+<div class="section">
+    <h2>Preliminary Schedule</h2>
+    <table class="schedule">
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>15 min</td>
+            <td>Introduction and presentation of the library</td>
+        </tr>
+        <tr>
+            <td>20 min</td>
+            <td>Questions and setup of the first training task</td>
+        </tr>
+        <tr>
+            <td>30 min</td>
+            <td>First training task</td>
+        </tr>
+        <tr>
+            <td>15 min</td>
+            <td>Break</td>
+        </tr>
+        <tr>
+            <td>10 min</td>
+            <td>Introduction and setup of the second training task</td>
+        </tr>
+        <tr>
+            <td>30 min</td>
+            <td>Second training task</td>
+        </tr>
+        <tr>
+            <td>10 min</td>
+            <td>Introduction and setup of the third training task</td>
+        </tr>
+        <tr>
+            <td>30 min</td>
+            <td>Third training task</td>
+        </tr>
+        <tr>
+            <td>20 min</td>
+            <td>Feedback and Questions</td>
+        </tr>
+    </table>
+</div>
 
+<div class="section">
+    <h2>Target Audience</h2>
+    <p>This tutorial is intended for graduate students, young researchers, and computer scientists with an interest in computer vision and machine learning. We anticipate 20 to 40 attendees, but we can scale it accordingly.</p>
+</div>
 
-        </footer>
+<section id="organizers">
+    <h2>Organizers</h2>
+    <div class="organizer">
+        <img src="emmanuel.jpeg" alt="Prof. Dr. Emmanuel Müller" width="150">
+        <h3>Prof. Dr. Emmanuel Müller</h3>
+        <p>Prof. Müller holds the Chair of Data Science and Data Engineering at TU Dortmund University. His research focuses on data mining, machine learning, scalable algorithms, and the exploration of high dimensional data, complex graphs, time series, and data streams. He is also the director of the Research Center Trustworthy Data Science and Security and a principal investigator at the Lamarr Institute for Machine Learning and Artificial Intelligence.</p>
+        <a href="https://ls9-www.cs.tu-dortmund.de/">Website</a> |
+        <a href="mailto:emmanuel.mueller@tu-dortmund.de">Email</a> |
+        <a href="https://scholar.google.com/citations?user=gg0HkEsAAAAJ&hl=en">Google Scholar</a>
     </div>
 
-<a class="scrolltop btn on" href="javascript:void(0);" aria-hidden="true" data-jump="#">▴</a></div><nav id="nav" class="tree invert" tabindex="0"><button aria-label="toggle menu" aria-pressed="false" class="menu-btn" href="#nav"><b>—</b><b>—</b><b>—</b></button><form action="https://search.cmu.edu/" class="search search-form" method="get" name="customForm">
-            <input id="id_form_id" name="form_id" type="hidden" value="basic-form">
-            <input id="site" name="site" type="hidden" value="">
-            <input id="id_ie" name="ie" type="hidden" value="UTF-8">
-            <label><span>Search</span>
-                <input aria-label="Search" id="id_q" name="q" placeholder="Search">
-            </label>              <button title="Submit" type="submit">Search</button>
-                        <input name="site" type="hidden" value="">
-                    </form><h1><a href="https://www.cmu.edu/ethics-ai/index.html">K&amp;L Gates Initiative in Ethics &amp; Computational Technologies</a></h1>
+    <div class="organizer">
+        <img src="alice.jpeg" alt="Prof. Dr. Alice Kirchheim" width="150">
+        <h3>Prof. Dr. Alice Kirchheim</h3>
+        <p>Prof. Kirchheim holds the Chair of Material Handling and Warehousing at TU Dortmund University, with research focused on applying machine learning to logistical scenarios. She is the managing director at Fraunhofer Institute for Material Flow and Logistics, and a principal investigator at the Lamarr Institute for Machine Learning and Artificial Intelligence.</p>
+        <a href="https://flw.mb.tu-dortmund.de/ueber-uns/#lehrstuhl">Website</a> |
+        <a href="mailto:alice.kirchheim@iml.fraunhofer.de">Email</a> |
+        <a href="https://scholar.google.com/citations?user=eY-wazgAAAAJ&hl=en">Google Scholar</a>
+    </div>
 
-                                                           
-                            <div><ul>
-                                                        <li class="">                              <a href="https://www.cmu.edu/ethics-ai/about/index.html" target="_self">                     Our Team
-    </a>
-                        
-                                          
-                                                                                            </li>
-            	                                                                       
-                                        <li class="">                              <a href="https://www.cmu.edu/ethics-ai/events/index.html" target="_self">                     Events
-    </a>
-                        
-                                          
-                                                                                                                                                                                 </li>
-            	                                                                       
-                                        <li class="">                              <a href="https://www.cmu.edu/ethics-ai/news/index.html" target="_self">                     News
-    </a>
-                        
-                                          
-                                                                                            </li>
-            	                                                                                                                                                                                                     
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                         
-                </ul></div>
-    </nav><div id="overlay"></div>
+    <div class="organizer">
+        <img src="simon.jpeg" alt="Simon Klüttermann, M.Sc." width="150">
+        <h3>Simon Klüttermann, M.Sc.</h3>
+        <p>Simon is a researcher at the Chair of Data Science and Data Engineering at TU Dortmund University, specializing in machine learning and data mining algorithms with a focus on anomaly detection, ensemble methods, and contrastive learning. He is a member of the Lamarr Institute for Machine Learning and Artificial Intelligence, and is involved in industrial re-identification projects.</p>
+        <a href="mailto:simon.kluettermann@tu-dortmund.de">Email</a>
+    </div>
 
- <script src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/list.min.js" type="text/javascript"></script>
- <script src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/jquery-1.10.1.min.js" type="text/javascript"></script>
- <script src="./NeurIPS 2023 Tutorial - K&amp;L Gates Initiative in Ethics &amp; Computational Technologies - Carnegie Mellon University_files/main.6.7.min.js" type="text/javascript"></script>
+    <div class="organizer">
+        <img src="jerome.jpeg" alt="Jérôme Rutinowski, M.Sc." width="150">
+        <h3>Jérôme Rutinowski, M.Sc.</h3>
+        <p>Jérôme is a postdoctoral researcher at the Chair of Data Science and Data Engineering at TU Dortmund University. His research interests include machine learning with a focus on anomaly detection and interpretability in complex industrial data. He is also a key member of the Research Center Trustworthy Data Science and Security.</p>
+        <a href="mailto:jerome.rutinowski@tu-dortmund.de">Email</a>
+    </div>
 
- 
-
-    
-    
-                                                                
-    
-        
-    
-    
-    
-    
-            
-    
-        
-    
-    
-    
-    
-            
-    
-        
-    
-    
+    <div class="organizer">
+        <img src="frederik.jpeg" alt="Frederik Polachowski, M.Sc." width="150">
+        <h3>Frederik Polachowski, M.Sc.</h3>
+        <p>Frederik is a doctoral researcher at the Chair of Data Science and Data Engineering at TU Dortmund University. His research focuses on scalable machine learning algorithms, particularly in the areas of ensemble learning, anomaly detection, and outlier analysis.</p>
+        <a href="mailto:frederik.polachowski@tu-dortmund.de">Email</a>
+    </div>
+</section>
 
 
+<footer>
+    <p>&copy; 2025 Lamarr Institute for Machine Learning and Artificial Intelligence</p>
+</footer>
 
+</body>
+</html>
 
-       
-                                        
-
-
-        
-
-    
-    
-
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
-
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
